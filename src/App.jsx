@@ -17,6 +17,8 @@ import Messages from "./HomePage/Messages/Messages";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 import { theme as muTheme } from "./theme";
 import CheckoutPage from "./HomePage/Cards/CardOrder/CardOrderCheckout";
+import AddPayee from "./HomePage/Payee/AddPayee";
+import AllPayee from "./HomePage/Payee/AllPayee/AllPayee";
 
 function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -79,7 +81,10 @@ function App() {
             <Route index element={<Accounts />} />
             <Route path="holders" element={<Accounts />} />
             <Route path="messages" element={<Messages />} />
-            <Route path="tasks" element={<Accounts />} />
+            <Route path="payee" element={<AllPayee />} >
+              
+            </Route>
+            <Route path="payee/add" element={<AddPayee />} />
             <Route path="cards" element={<CheckoutPage/>} />
             <Route path="*" element={<h2>IM new</h2>} />
           </Route>

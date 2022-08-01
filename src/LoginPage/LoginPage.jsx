@@ -86,8 +86,7 @@ const LoginPage = () => {
 
         <form className={classes.form} noValidate onSubmit={handleSubmit}>
           <TextField
-            variant="outlined"
-            margin="normal"
+     
             required
             fullWidth
             id="email"
@@ -118,14 +117,13 @@ const LoginPage = () => {
           <Button
             type="submit"
             fullWidth
-            variant="contained"
             color="primary"
             disabled={loggingIn}
             className={classes.submit}
 
           >
             {loggingIn && <CircularProgress size={25}/>}
-            {!loggingIn && 'Click Me'}
+            {!loggingIn && 'Continue'}
           </Button>
           <Grid container>
             <Grid item xs>

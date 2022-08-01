@@ -50,9 +50,9 @@ export const theme = {
     MuiButton: {
       root: {
         textTransform: "none",
-        padding: "20px",
+        padding: "12px",
       },
-      fullWidth: {},
+      fullWidth: {}
     },
     MuiAppBar: {
       root: {},

@@ -93,8 +93,8 @@ const MENU_ITEMS = [
   },
   {
     id: 5,
-    title: "Users",
-    path: "users",
+    title: "Payee",
+    path: "payee",
     icon: <PeopleIcon />,
     subItems: null,
     open: false,

@@ -31,5 +31,5 @@ function getAll() {
 }
 
 export const AccountAction = {
-    getAll
+  getAll
 };
